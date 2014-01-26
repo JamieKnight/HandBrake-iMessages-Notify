@@ -21,25 +21,22 @@ This Script Requires:
 ### Step 1: Install Growl
 Either build it from source or download it from the App Store
 
-### Step 2: Enable AppleScript support in Growl
-To be allowed on the App Store, growl does some odd stuff to work with apples scripts. Follow the instructions at: http://growl.info/documentation/applescript-rules.
-
-### Step 3: Add a Contact to notify
+### Step 2: Add a Contact to notify
 iMessage does not allow you to message yourself. So my script looks for a contact named 'Notify Me', add a contact under that name and add either an iMessage enabled phoned number or email address.
 
-### Step 4: Install script 
-Download or checkout this repo to ``` ~/Library/Application Scripts/com.Growl.GrowlHelperApp.```
+### Step 3: Install script 
+Download or checkout this repo to ``` ~/Library/Application Scripts/com.Growl.GrowlHelperApp.``` (for explanation of why, see the [Growl Docs on AppleScript](http://growl.info/documentation/applescript-rules)
 
-### Step 5: Test Script
-In growl, open preferences and then create a new action called'messages' of type 'Script Action'. Select the script you want in the window and click preview.
+### Step 4: Test Script
+In growl, open preferences and then create a new action called 'messages' of type 'ScriptAction'. Select the script you wish to use in the window and click preview.
 
-You should see iMessages for Mac load and receive the message on yor target device. If this fails, then go to 'trouble shooting' below.
+You should see iMessages for Mac load and receive the message on your target device.
 
-### Step 6: Handbrake Config
-With your script tested now let's tell handbrake to alert growl. Go into handbrake preferences and set it to notify growl when it is done. 
+### Step 5: Setup Growl
+In the Growl preference set HandBrake to use the 'messages' action we when "encode completes" notification is sent.
 
-### Step 7: Setup Growl
-Finally, in growl preference setup handbrake to call the messages action we created when encodes complete.
+### Step 5: Handbrake Config
+With your script tested now let's tell handbrake to alert growl. Go into handbrake preferences and set it to notify growl when it is done.
 
 ## Other Methods
 If you only want to get an imessage for every encode, then you can use the script provided to create an application, and set that application to be called in Handbrake. However, the growl message is more flexable and better decoupled.
