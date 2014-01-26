@@ -13,7 +13,7 @@ HandBrake does not provide an event for when the Queue is complete, hence the "N
 This Script Requires:
 
 * Handbrake 0.9.9 or greater from http://handbrake.fr
-* Growl ([Growl on the App Store](http://growl.info/growlupdateavailable#updatemas), or [Compile Grown from Source](http://growl.info/growlupdateavailable#buildgrowlfromsource))
+* Growl ([Growl on the App Store](https://itunes.apple.com/gb/app/growl/id467939042?mt=12), or [Compile Grown from Source](http://growl.info/growlupdateavailable#buildgrowlfromsource))
 * Working iMessages.app (OSX 10.7 Onwards)
 
 ## Setup
